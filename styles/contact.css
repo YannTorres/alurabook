@@ -1,0 +1,135 @@
+.contact {
+  background-color: var(--white);
+  padding: 1.5em;
+  text-align: left;
+}
+
+.contactTitle {
+  background: var(--blue-degrade);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.contactText {
+  background: var(--blue-degrade);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 300;
+  line-height: 24px;
+  padding-top: 0.5em;
+  padding-bottom: 1.5em;
+}
+
+.contactEmail {
+  padding: 1em;
+  background-color: transparent;
+  border: 1px solid var(--blue);
+  border-radius: 1.5em;
+  color: var(--blue);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.contactEmail::placeholder {
+  font-weight: 400;
+  font-family: var(--font-principal);
+  font-size: 14px;
+  padding: 2.5em;
+  color: var(--blue);
+  background: url(../assets/Email.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+hr {
+  border: 1px solid #858585;
+  margin: 0;
+}
+
+.footer {
+  padding: 1em 0 1.5em 1.5em;
+  background-color: var(--white);
+}
+
+.footerList {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .contactTitle {
+    font-size: 24px;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactDescrition {
+    margin-top: 2em;
+    margin-right: 1em;
+    width: 30%;
+  }
+
+  .contactEmail {
+    padding: 1em;
+    border-radius: 1.5em;
+    box-sizing: border-box;
+    width: 35%;
+  }
+
+  .footer {
+    display: flex;
+    padding: 3.5em 0 1.5em 0em;
+    gap: 61px;
+    justify-content: center;
+  }
+
+  .footerTitle {
+    font-size: 24px;
+  }
+
+  .footerList {
+    display: block;
+  }
+
+  .footerTitleList {
+    font-size: 14px;
+    color: #858585;
+    margin-bottom: 1.5em;
+  }
+
+  .footerItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  .footerLink {
+    text-decoration: none;
+    color: #474646;
+    margin-left: 0.5em;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .contact {
+    padding: 3em 20vw;
+  }
+
+  .contactDescrition {
+    margin-right: 0em;
+  }
+
+  .footerList {
+    border-left: 1px solid #858585;
+    padding-left: 1em;
+  }
+}

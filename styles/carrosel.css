@@ -1,0 +1,154 @@
+.carrosselTitle {
+  color: var(--orange);
+  background-color: var(--white);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 1em 0 0.5em 0;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+.swiper-pagination {
+  position: initial;
+  padding: 0.5em 0 0.5em 0;
+}
+
+.card {
+  background: var(--white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 1.25em;
+  padding: 1em 1em 1.5em 1em;
+}
+
+.cardDescrition {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+
+.cardButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5em;
+}
+
+.buttons {
+  display: flex;
+}
+
+.descritionTitle {
+  color: var(--orange);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.descritionTitleBook {
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0.5em 0;
+  line-height: 27px;
+}
+
+.descritionText {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.buttonsItem {
+  margin: 0.75em;
+}
+
+.descritionImage {
+  padding-left: 1em;
+}
+
+.buttonsAncora {
+  background-color: var(--orange);
+  padding: 1em 2.2em;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.imagemEstrelinhas {
+  padding-bottom: 0.5em;
+  padding-top: 0.4em;
+}
+
+@media screen and (min-width: 1024px) {
+  .carrosselTitle {
+    font-size: 26px;
+    padding: 2em 0 0.5em 0;
+  }
+  .swiper-pagination {
+    position: initial;
+    padding: 1.5em 0 2em 0;
+  }
+  .swiper {
+    width: 70%;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
+    top: 60%;
+    color: var(--blue);
+  }
+
+  .card {
+    width: 50%;
+    margin: 3em auto;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .carrosselContainer {
+    display: flex;
+    margin: 0 10vw 3em 10vw;
+    align-items: center;
+  }
+
+  .carrosselTitle {
+    font-size: 32px;
+  }
+
+  .swiper-pagination {
+    position: initial;
+    padding: 0.5em 0;
+  }
+
+  .swiper {
+    width: 45%;
+  }
+
+  .card {
+    width: 37%;
+    margin: 4em 3em 3em 0em;
+  }
+
+  .descritionTitle {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .descritionText {
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 2em;
+  }
+
+  .descritionImage {
+    padding-left: 2em;
+  }
+}

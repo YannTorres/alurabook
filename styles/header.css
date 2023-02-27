@@ -1,0 +1,161 @@
+.head {
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.headMenu {
+  width: 48px;
+  height: 48px;
+  background-image: url(../assets/Menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.containerImage {
+  padding: 1em;
+}
+
+.listMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 70vw;
+}
+
+.containerButton {
+  display: none;
+}
+
+.containerButton:checked ~ .listMenu {
+  display: block;
+  z-index: 2;
+}
+
+.containerButton:checked ~ .containerLabel > .headMenu {
+  background-image: url(../assets/Menu\ Aberto.svg);
+}
+
+.containerButton:checked ~ .containerLabel {
+  background: var(--blue-degrade);
+}
+
+.listMenuTitle,
+.listMenuItem {
+  padding: 1em 2em;
+  background-color: var(--white);
+}
+
+.listMenuTitle {
+  color: var(--orange);
+  font-weight: 700;
+}
+
+.ListMenuLink {
+  background: var(--blue-degrade);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.containerTituloLogo {
+  display: none;
+}
+
+.options {
+  display: none;
+}
+
+.containerText {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .headMenu {
+    display: none;
+  }
+
+  .head {
+    padding: 0 5em;
+  }
+
+  .containerTituloLogo,
+  .ContainerTituloLogoNegrito {
+    font-family: var(--font-secundary);
+    font-size: 30px;
+  }
+
+  .containerTituloLogo {
+    font-weight: 400;
+    display: block;
+  }
+
+  .ContainerTituloLogoNegrito {
+    font-weight: 700;
+  }
+
+  .options {
+    display: flex;
+  }
+
+  .categotyOptions {
+    font-family: var(--font-principal);
+    padding: 0.625em 2em 0.625em 0.625em;
+  }
+  .linkOptions {
+    text-decoration: none;
+    color: var(--black);
+  }
+
+  .containerImageTransparent {
+    display: none;
+  }
+
+  .opçõesButton {
+    display: none;
+  }
+
+  .listMenu {
+    width: auto;
+  }
+
+  .opçõesButton:checked ~ .listMenu {
+    display: block;
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .containerLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black);
+  }
+
+  .containerText {
+    display: flex;
+  }
+
+  .containerText1 {
+    margin-right: 3.75em;
+  }
+
+  .options {
+    margin-right: auto;
+  }
+
+  .containerTituloLogo {
+    padding-right: 2em;
+  }
+}
